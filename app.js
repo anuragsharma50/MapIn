@@ -6,7 +6,7 @@ window.onload = () => {
 function staticLoadPlaces() {
    return [
        {
-           name: 'Spider-Man',
+           name: 'Avengers Logo',
            location: {
                lat: 28.7341925,
                lng: 77.5106628,
@@ -24,7 +24,7 @@ function renderPlaces(places) {
 
        let model = document.createElement('a-entity');
        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-       model.setAttribute('gltf-model', './assets/the-amazing-spiderman/scene.gltf');
+       model.setAttribute('gltf-model', './assets/avengers_logo/scene.gltf');
        model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
        model.setAttribute('scale', '10 10 10');

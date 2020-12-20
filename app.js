@@ -27,7 +27,7 @@ function renderPlaces(places) {
        model.setAttribute('gltf-model', './assets/the-amazing-spiderman/scene.gltf');
        model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
-       model.setAttribute('scale', '0.9 0.9 0.9');
+       model.setAttribute('scale', '0.05 0.05 0.05');
 
        model.addEventListener('loaded', () => {
            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))

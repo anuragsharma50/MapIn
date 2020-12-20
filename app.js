@@ -8,8 +8,8 @@ function staticLoadPlaces() {
        {
            name: 'Spider-Man',
            location: {
-               lat: 28.7341925,
-               lng: 77.5106628,
+               lat: 28.7342689,
+               lng: 77.5106279,
            }
        },
    ];

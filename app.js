@@ -27,7 +27,7 @@ function renderPlaces(places) {
        model.setAttribute('gltf-model', './assets/avengers_logo/scene.gltf');
        model.setAttribute('rotation', '0 90 0');
        model.setAttribute('animation-mixer', '');
-       model.setAttribute('scale', '2 2 2');
+       model.setAttribute('scale', '1 5 5');
 
        model.addEventListener('loaded', () => {
            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))

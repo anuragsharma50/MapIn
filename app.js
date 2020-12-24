@@ -8,8 +8,8 @@ function staticLoadPlaces() {
        {
            name: 'Arrow',
            location: {
-               lat: 28.7341928,
-               lng: 77.5108258,
+               lat: 28.734234,
+               lng: 77.510716,
            }
        },
    ];

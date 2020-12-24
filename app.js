@@ -8,8 +8,8 @@ function staticLoadPlaces() {
        {
            name: 'Avengers Logo',
            location: {
-               lat: 28.7342263,
-               lng: 77.5107621,
+               lat: 28.7342216,
+               lng: 77.5107792,
            }
        },
    ];

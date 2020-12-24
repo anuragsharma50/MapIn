@@ -8,8 +8,8 @@ function staticLoadPlaces() {
        {
            name: 'Avengers Logo',
            location: {
-               lat: 28.734234,
-               lng: 77.510716,
+               lat: 28.7342263,
+               lng: 77.5107621,
            }
        },
    ];
@@ -25,7 +25,7 @@ function renderPlaces(places) {
        let model = document.createElement('a-entity');
        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
        model.setAttribute('gltf-model', './assets/avengers_logo/scene.gltf');
-       model.setAttribute('rotation', '60 180 0');
+       model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
        model.setAttribute('scale', '10 10 10');
 

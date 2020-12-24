@@ -6,7 +6,7 @@ window.onload = () => {
 function staticLoadPlaces() {
    return [
        {
-           name: 'Avengers Logo',
+           name: 'Arrow',
            location: {
                lat: 28.7341928,
                lng: 77.5108258,
@@ -24,7 +24,7 @@ function renderPlaces(places) {
 
        let model = document.createElement('a-entity');
        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-       model.setAttribute('gltf-model', './assets/avengers_logo/scene.gltf');
+       model.setAttribute('gltf-model', './assets/arrow/scene.gltf');
        model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
        model.setAttribute('scale', '10 10 10');

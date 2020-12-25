@@ -6,7 +6,7 @@ window.onload = () => {
 function staticLoadPlaces() {
    return [
        {
-           name: 'Arrow',
+           name: 'Direction Arrow',
            location: {
                lat: 28.734234,
                lng: 77.510716,

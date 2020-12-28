@@ -24,7 +24,7 @@ function renderPlaces(places) {
 
        let model = document.createElement('a-entity');
        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-       model.setAttribute('gltf-model', './assets/jumpboost_arrow/scene.gltf');
+       model.setAttribute('json', './assets/arrow-3/arrow.json');
        model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
        model.setAttribute('scale', '10 10 10');

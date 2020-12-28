@@ -20,11 +20,12 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-text
+<!--       <a-text
         value="No markers around"
         look-at="[gps-camera]"
         scale="5 5 5"
-      ></a-text>
+      ></a-text> -->
+      <a-entity json-model=”src: url(/assets/arrow-3/arrow.json);” ></a-entity>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>

@@ -27,7 +27,7 @@ function renderPlaces(places) {
         model.setAttribute('gltf-model', './assets/arrow.glb');
         model.setAttribute('rotation', '0 0 0');
 //         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '5 5 5');
+        model.setAttribute('scale', '2 2 2');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))

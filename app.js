@@ -12,6 +12,13 @@ function staticLoadPlaces() {
                 lng: 77.510596,
             }
         },
+         {
+            name: 'Arrow',
+            location: {
+                lat: 28.734229,
+                lng: 77.510661,
+            }
+        },
     ];
 }
 

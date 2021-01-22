@@ -10,14 +10,16 @@ function staticLoadPlaces() {
             location: {
                 lat: 28.734282,
                 lng: 77.510596,
-            }
+            },
+             rotation: '0 0 0',
         },
          {
             name: 'Arrow',
             location: {
                 lat: 28.734229,
                 lng: 77.510661,
-            }
+            },
+            rotation: '0 180 0',
         },
     ];
 }
@@ -33,7 +35,10 @@ function renderPlaces(places) {
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('gltf-model', './assets/arrow.glb');
-        model.setAttribute('rotation', '0 0 0');
+         if (places.rotation) {
+               entity.setAttribute('rotation', places.rotation);
+          }
+
 //         model.setAttribute('animation-mixer', '');
         model.setAttribute('scale', '0.5 0.5 0.5');
 

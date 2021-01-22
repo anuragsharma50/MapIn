@@ -28,7 +28,6 @@ function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
 
     places.forEach((place) => {
-        console.log(place.name);
         let latitude = place.location.lat;
         let longitude = place.location.lng;
 

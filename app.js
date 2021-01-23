@@ -35,6 +35,7 @@ function renderPlaces(places) {
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('gltf-model', './assets/arrow.glb');
          if (place.rotation) {
+              console.log(place.rotation)
                entity.setAttribute('rotation', place.rotation);
           }
 

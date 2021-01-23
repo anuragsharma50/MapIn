@@ -11,7 +11,7 @@ function staticLoadPlaces() {
                 lat: 28.734282,
                 lng: 77.510596,
             },
-             rotation: '0 0 0',
+             rotation: '0 0 90',
         },
          {
             name: 'Arrow',

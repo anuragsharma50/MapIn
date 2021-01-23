@@ -11,7 +11,7 @@ function staticLoadPlaces() {
                 lat: 28.734282,
                 lng: 77.510596,
             },
-             rotation: '0 0 90',
+             rotation: '0 0 0',
         },
          {
             name: 'Arrow',
@@ -19,7 +19,7 @@ function staticLoadPlaces() {
                 lat: 28.734229,
                 lng: 77.510661,
             },
-            rotation: '0 180 0',
+            rotation: '0 90 0',
         },
     ];
 }
@@ -37,8 +37,11 @@ function renderPlaces(places) {
         model.setAttribute('gltf-model', './assets/arrow.glb');
          console.log(place.rotation);
          if (place.rotation) {
-               entity.setAttribute('rotation', place.rotation);
+               model.setAttribute('rotation', place.rotation);
           }
+         else{
+               model.setAttribute('rotation', '0 0 0');
+         }
 
 //         model.setAttribute('animation-mixer', '');
         model.setAttribute('scale', '0.5 0.5 0.5');

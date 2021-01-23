@@ -28,13 +28,14 @@ function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
 
     places.forEach((place) => {
+         console.log(place.name);
         let latitude = place.location.lat;
         let longitude = place.location.lng;
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('gltf-model', './assets/arrow.glb');
-         console.log(place.rotation)
+         console.log(place.rotation);
          if (place.rotation) {
                entity.setAttribute('rotation', place.rotation);
           }

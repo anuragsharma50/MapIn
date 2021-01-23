@@ -34,8 +34,8 @@ function renderPlaces(places) {
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('gltf-model', './assets/arrow.glb');
-         if (places.rotation) {
-               entity.setAttribute('rotation', places.rotation);
+         if (place.rotation) {
+               entity.setAttribute('rotation', place.rotation);
           }
 
 //         model.setAttribute('animation-mixer', '');

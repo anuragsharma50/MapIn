@@ -1,10 +1,11 @@
 //location
 
-var selectedValue = ''
+var selectedValue = '';
+var select = '';
 function addLoc()
     {
-        var select = document.getElementById("locations");
-        var selectedValue = select.options[select.selectedIndex].value;
+        select = document.getElementById("locations");
+        selectedValue = select.options[select.selectedIndex].value;
         console.log(selectedValue);
     }
 

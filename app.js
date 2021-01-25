@@ -9,25 +9,22 @@ function addLoc()
         console.log(selectedValue);
         
         var rotation1 = '';
-var rotation2 = '';
-var rotation3 = '';
+        var rotation2 = '';
+        var rotation3 = '';
 
-if(selectedValue === 'Home'){
-    rotation1 = '0 0 0';
-    rotation2 = '0 0 0';
-    rotation3 = '0 0 0';
-}
-else{
-    rotation1 = '0 180 0';
-    rotation2 = '0 90 0';
-    rotation3 = '0 180 0';
-}
+        if(selectedValue === 'Home'){
+            rotation1 = '0 0 0';
+            rotation2 = '0 0 0';
+            rotation3 = '0 0 0';
+        }
+        else{
+            rotation1 = '0 180 0';
+            rotation2 = '0 90 0';
+            rotation3 = '0 180 0';
+        }
 
-//Ar
-window.onload = () => {
      let places = staticLoadPlaces();
      renderPlaces(places);
-};
 
 function staticLoadPlaces() {
     return [

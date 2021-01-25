@@ -1,3 +1,28 @@
+//location
+
+function addLoc()
+    {
+        var select = document.getElementById("locations");
+        var selectedValue = select.options[select.selectedIndex].value;
+        console.log(selectedValue);
+    }
+
+var rotation1 = '';
+var rotation2 = '';
+var rotation3 = '';
+
+if(selectedValue === 'Home'){
+    rotation1 = '0 0 0';
+    rotation2 = '0 0 0';
+    rotation3 = '0 0 0';
+}
+else{
+    rotation1 = '0 180 0';
+    rotation2 = '0 90 0';
+    rotation3 = '0 180 0';
+}
+
+//Ar
 window.onload = () => {
      let places = staticLoadPlaces();
      renderPlaces(places);
@@ -11,7 +36,7 @@ function staticLoadPlaces() {
                 lat: 28.734282,
                 lng: 77.510596,
             },
-             rotation: '0 0 0',
+             rotation: rotation1,
         },
          {
             name: 'Arrow',
@@ -19,7 +44,7 @@ function staticLoadPlaces() {
                 lat: 28.734229,
                 lng: 77.510661,
             },
-            rotation: '0 90 0',
+            rotation: rotation2,
         },
          {
             name: 'Arrow2',
@@ -27,7 +52,7 @@ function staticLoadPlaces() {
                 lat: 28.734229,
                 lng: 77.510661,
             },
-            rotation: '0 180 0',
+            rotation: rotation3,
         },
     ];
 }

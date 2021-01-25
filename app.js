@@ -7,9 +7,8 @@ function addLoc()
         select = document.getElementById("locations");
         selectedValue = select.options[select.selectedIndex].value;
         console.log(selectedValue);
-    }
-
-var rotation1 = '';
+        
+        var rotation1 = '';
 var rotation2 = '';
 var rotation3 = '';
 
@@ -88,3 +87,6 @@ function renderPlaces(places) {
         scene.appendChild(model);
     });
 }
+
+    }
+

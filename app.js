@@ -22,6 +22,10 @@ function addLoc()
             rotation2 = '0 90 0';
             rotation3 = '0 180 0';
         }
+        
+        console.log(rotation1);
+        console.log(rotation2);
+        console.log(rotation3);
 
      let places = staticLoadPlaces();
      renderPlaces(places);

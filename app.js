@@ -7,8 +7,11 @@ function addLoc()
         select = document.getElementById("locations");
         selectedValue = select.options[select.selectedIndex].value;
         console.log(selectedValue);
-        
-        var rotation1 = '';
+    }
+
+console.log(selectedValue);
+
+var rotation1 = '';
         var rotation2 = '';
         var rotation3 = '';
 
@@ -27,8 +30,10 @@ function addLoc()
         console.log(rotation2);
         console.log(rotation3);
 
+window.onload = () => {
      let places = staticLoadPlaces();
      renderPlaces(places);
+};
 
 function staticLoadPlaces() {
     return [
@@ -88,6 +93,3 @@ function renderPlaces(places) {
         scene.appendChild(model);
     });
 }
-
-    }
-

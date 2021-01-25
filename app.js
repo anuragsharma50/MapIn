@@ -1,5 +1,6 @@
 //location
 
+var selectedValue = ''
 function addLoc()
     {
         var select = document.getElementById("locations");

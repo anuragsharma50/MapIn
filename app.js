@@ -14,9 +14,9 @@
     }
     else{
         rotation1 = '0 0 0';
-        rotation2 = '0 180 0';
-        rotation3 = '0 180 0';
-        rotation4 = '0 180 0';
+        rotation2 = '0 150 0';
+        rotation3 = '0 150 0';
+        rotation4 = '0 150 0';
     }
 
     console.log(rotation1);

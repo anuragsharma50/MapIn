@@ -1,4 +1,3 @@
-window.onload = () => {    
     var selectedValue = sessionStorage.getItem("location");
     console.log(selectedValue);
 
@@ -20,7 +19,8 @@ window.onload = () => {
     console.log(rotation1);
     console.log(rotation2);
     console.log(rotation3);
-    
+
+window.onload = () => {    
      let places = staticLoadPlaces();
      renderPlaces(places);
 };

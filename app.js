@@ -4,16 +4,19 @@
     var rotation1 = '';
     var rotation2 = '';
     var rotation3 = '';
+    var rotation4 = '';
 
-    if(selectedValue === 'home'){
+    if(selectedValue === 'temple'){
         rotation1 = '0 0 0';
         rotation2 = '0 0 0';
         rotation3 = '0 0 0';
+        rotation4 = '0 0 0';
     }
     else{
         rotation1 = '0 0 0';
-        rotation2 = '0 90 0';
+        rotation2 = '0 180 0';
         rotation3 = '0 180 0';
+        rotation4 = '0 180 0';
     }
 
     console.log(rotation1);
@@ -28,28 +31,36 @@ window.onload = () => {
 function staticLoadPlaces() {
     return [
         {
-            name: 'Magnemite',
+            name: 'Arrow',
             location: {
-                lat: 28.734282,
-                lng: 77.510596,
+                lat: 28.734376,
+                lng: 77.510645,
             },
              rotation: rotation1,
         },
          {
-            name: 'Arrow',
+            name: 'Arrow2',
             location: {
-                lat: 28.734229,
-                lng: 77.510661,
+                lat: 28.734213,
+                lng: 77.510555,
             },
             rotation: rotation2,
         },
          {
-            name: 'Arrow2',
+            name: 'Arrow3',
             location: {
-                lat: 28.734229,
-                lng: 77.510661,
+                lat: 28.733957,
+                lng: 77.510505,
             },
             rotation: rotation3,
+        },
+        {
+            name: 'Arrow4',
+            location: {
+                lat: 28.733786,
+                lng: 77.510468,
+            },
+            rotation: rotation4,
         },
     ];
 }

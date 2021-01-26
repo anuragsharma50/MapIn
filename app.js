@@ -1,36 +1,26 @@
-//location
+window.onload = () => {    
+    var selectedValue = sessionStorage.getItem("location");
+    console.log(selectedValue);
 
-var selectedValue = '';
-var select = '';
-function addLoc()
-    {
-        select = document.getElementById("locations");
-        selectedValue = select.options[select.selectedIndex].value;
-        console.log(selectedValue);
+    var rotation1 = '';
+    var rotation2 = '';
+    var rotation3 = '';
+
+    if(selectedValue === 'home'){
+        rotation1 = '0 0 0';
+        rotation2 = '0 0 0';
+        rotation3 = '0 0 0';
+    }
+    else{
+        rotation1 = '0 0 0';
+        rotation2 = '0 90 0';
+        rotation3 = '0 180 0';
     }
 
-console.log(selectedValue);
-
-var rotation1 = '';
-        var rotation2 = '';
-        var rotation3 = '';
-
-        if(selectedValue === 'Home'){
-            rotation1 = '0 0 0';
-            rotation2 = '0 0 0';
-            rotation3 = '0 0 0';
-        }
-        else{
-            rotation1 = '0 180 0';
-            rotation2 = '0 90 0';
-            rotation3 = '0 180 0';
-        }
-        
-        console.log(rotation1);
-        console.log(rotation2);
-        console.log(rotation3);
-
-window.onload = () => {
+    console.log(rotation1);
+    console.log(rotation2);
+    console.log(rotation3);
+    
      let places = staticLoadPlaces();
      renderPlaces(places);
 };

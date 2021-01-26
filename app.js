@@ -10,13 +10,13 @@
         rotation1 = '0 0 0';
         rotation2 = '0 0 0';
         rotation3 = '0 0 0';
-        rotation4 = '0 0 0';
+        rotation4 = '0 60 0';
     }
     else{
         rotation1 = '0 0 0';
         rotation2 = '0 150 0';
         rotation3 = '0 210 0';
-        rotation4 = '0 210 0';
+        rotation4 = '0 200 0';
     }
 
     console.log(rotation1);

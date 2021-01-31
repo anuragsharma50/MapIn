@@ -10,7 +10,7 @@
         rotation1 = '0 0 0';
         rotation2 = '0 0 0';
         rotation3 = '0 0 0';
-        rotation4 = '0 60 0';
+        rotation4 = '0 150 0';
     }
     else{
         rotation1 = '0 0 0';

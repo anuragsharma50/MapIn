@@ -84,7 +84,6 @@ function renderPlaces(places) {
                model.setAttribute('rotation', '0 0 0');
          }
 
-//         model.setAttribute('animation-mixer', '');
         model.setAttribute('scale', '0.8 0.8 0.8');
 
         model.addEventListener('loaded', () => {

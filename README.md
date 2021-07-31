@@ -1,7 +1,7 @@
-# AR-test
+# MapIn
 
-https://anuragsharma50.github.io/AR-test/ar.html
+# Direct jump to AR page
+https://anuragsharma50.github.io/MapIn/ar.html
 
-https://anuragsharma50.github.io/AR-test/ar2.html
-
-https://anuragsharma50.github.io/AR-test/locations.html
+# Select Locations from this page
+https://anuragsharma50.github.io/MapIn/locations.html
